@@ -1,0 +1,58 @@
+#+TITLE:  Something about Org-mode
+#+AUTHOR: xwhuang
+#+EMAIL:  huangxiaoweigx@gmail.com
+#+DATE:   2015-09-09
+#+OPTIONS: toc:nil
+
+* About OPTIONS <<About OPTIONS>>
+
+  | *H:*         | Set the number of headline levels for export.                  |
+  | *num:*       | Turn on/off section-numbers.                                   |
+  | *toc:*       | Turn on/off table of contents, or set level limit (integer).   |
+  | ~\n~:        | Turn on/off line-break-preservation.                           |
+  | *@:*         | Turn on/off quoted HTML tags.                                  |
+  | *::*         | Turn on/off fixed-width sections.                              |
+  | *\vert:*     | Turn on/off tables.                                            |
+  | *^:*         | Turn on/off TeX-like syntax for sub- and superscripts.  If     |
+  |              | you write "^:{}", `a_{b}' will be interpreted, but             |
+  |              | the simple `a_b' will be left as it is.                        |
+  | *-:*         | Turn on/off conversion of special strings.                     |
+  | *f:*         | Turn on/off footnotes like this.                               |
+  | *todo:*      | Turn on/off inclusion of TODO keywords into exported text.     |
+  | *pri:*       | Turn on/off priority cookies.                                  |
+  | *tags:*      | Turn on/off inclusion of tags, may also be `not-in-toc'.       |
+  | *<:*         | Turn on/off inclusion of any time/date stamps like DEADLINES.  |
+  | *~*~*:       | Turn on/off emphasized text (bold, italic, underlined).        |
+  | *TeX:*       | Turn on/off simple TeX macros in plain text.                   |
+  | *LaTeX:*     | Turn on/off LaTeX fragments.                                   |
+  | *skip:*      | Turn on/off skipping the text before the first heading.        |
+  | *author:*    | Turn on/off inclusion of author name/email into exported file. |
+  | *creator:*   | Turn on/off inclusion of creator info into exported file.      |
+  | *timestamp:* | Turn on/off inclusion creation time into exported file.        |
+  | *d:*         | Turn on/off inclusion of drawers.                              |
+* Others
+** Set a link
+   #+BEGIN_SRC elisp
+   <<anchor>>
+   #+END_SRC
+   @see About OPTIONS
+
+** Reference to a link
+   #+BEGIN_SRC elisp
+   [[anchor][description]]
+   #+END_SRC
+   [[About OPTIONS][Reference to About OPTIONS]]
+
+** Add footnode
+   *Hot key:* ~C-c C-x f~, like[fn:1] \\
+   how to use github[fn:2]
+
+** Use #+INCLUDE to include a file
+   #+INCLUDE: "include-demo.rst" src txt
+
+* Footnotes
+
+[fn:1] http://orgmode.org
+[fn:2] http://github.com
+
+
