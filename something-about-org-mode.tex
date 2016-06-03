@@ -1,0 +1,88 @@
+% Created 2015-09-09 Wed 10:52
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\author{xwhuang}
+\date{2015-09-09}
+\title{Something about Org-mode}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.3.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+
+\section{About OPTIONS \label{About-OPTIONS}}
+\label{sec-1}
+
+\begin{center}
+\begin{tabular}{ll}
+\textbf{H:} & Set the number of headline levels for export.\\
+\textbf{num:} & Turn on/off section-numbers.\\
+\textbf{toc:} & Turn on/off table of contents, or set level limit (integer).\\
+\verb~\n~: & Turn on/off line-break-preservation.\\
+\textbf{@:} & Turn on/off quoted HTML tags.\\
+\textbf{::} & Turn on/off fixed-width sections.\\
+\textbf{$\vert{}$:} & Turn on/off tables.\\
+\textbf{\^{}:} & Turn on/off \TeX{}-like syntax for sub- and superscripts.  If\\
+ & you write "\^{}:\{\}", `a$_{\text{b}}$' will be interpreted, but\\
+ & the simple `a$_{\text{b'}}$ will be left as it is.\\
+\textbf{-:} & Turn on/off conversion of special strings.\\
+\textbf{f:} & Turn on/off footnotes like this.\\
+\textbf{todo:} & Turn on/off inclusion of TODO keywords into exported text.\\
+\textbf{pri:} & Turn on/off priority cookies.\\
+\textbf{tags:} & Turn on/off inclusion of tags, may also be `not-in-toc'.\\
+\textbf{<:} & Turn on/off inclusion of any time/date stamps like DEADLINES.\\
+\textbf{\verb~*~}: & Turn on/off emphasized text (bold, italic, underlined).\\
+\textbf{\TeX{}:} & Turn on/off simple \TeX{} macros in plain text.\\
+\textbf{\LaTeX{}:} & Turn on/off \LaTeX{} fragments.\\
+\textbf{skip:} & Turn on/off skipping the text before the first heading.\\
+\textbf{author:} & Turn on/off inclusion of author name/email into exported file.\\
+\textbf{creator:} & Turn on/off inclusion of creator info into exported file.\\
+\textbf{timestamp:} & Turn on/off inclusion creation time into exported file.\\
+\textbf{d:} & Turn on/off inclusion of drawers.\\
+\end{tabular}
+\end{center}
+\section{Others}
+\label{sec-2}
+\subsection{Set a link}
+\label{sec-2-1}
+\begin{verbatim}
+<<anchor>>
+\end{verbatim}
+@see About OPTIONS
+
+\subsection{Reference to a link}
+\label{sec-2-2}
+\begin{verbatim}
+[[anchor][description]]
+\end{verbatim}
+\hyperref[About-OPTIONS]{Reference to About OPTIONS}
+
+\subsection{Add footnode}
+\label{sec-2-3}
+\textbf{Hot key:} \verb~C-c C-x f~, like\footnote{\url{http://orgmode.org}} \\
+   how to use github\footnote{\url{http://github.com}}
+
+\subsection{Use \#+INCLUDE to include this file}
+\label{sec-2-4}
+\begin{verbatim}
+from incude-demo.rst
+\end{verbatim}
+% Emacs 24.3.1 (Org mode 8.2.10)
+\end{document}
