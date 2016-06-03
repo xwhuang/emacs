@@ -1,0 +1,87 @@
+%\usepackage{colortbl}
+%\usepackage{multirow}
+%\begin{tabular}{|c|c|c|c|c|}
+%  \hline
+%  \multirow{2}{*}{Multi-Row} &
+%  \multicolumn{2}{c|}{Multi-Column} &
+%  \multicolumn{2}{c|}{\multirow{2}{*}{Multi-Row and Col}} \\
+%  \cline{2-3}
+%  & column-1 & column-2 & \multicolumn{2}{c|}{} \\
+%  \hline
+%  label-1 & label-2 & label-3 & label-4 & label-5 \\
+%  \hline
+%\end{tabular}
+
+%\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|} % 9 columns
+  \hline
+  c1 & c2 & c3 & c4 & c5 & c6 & c7 & c8 & c9 \\
+  \hline
+  \hline
+  & \multicolumn{8}{c|}{描述} \\
+  \hline
+  \multirow{2}{*}{\begin{sideways}\footnotesize{链路层}\end{sideways}}
+  & arp  & \multicolumn{7}{>{\columncolor{gray}}c|}{what is arp} \\
+  \cline{2-9}
+  & rarp & \multicolumn{7}{c|}{what is rarp} \\
+  \hline
+  \multirow{4}{*}{\begin{sideways}\footnotesize{网络层}\end{sideways}}
+  & ip/ipv6  & \multicolumn{7}{c|}{what is IP/IPv6} \\
+  \cline{2-9}
+  & icmp & \multicolumn{7}{c|}{what is ICMP} \\
+  \cline{2-9}
+  & icmpv6 & \multicolumn{7}{c|}{what is ICMPv6} \\
+  \cline{2-9}
+  & igmp & \multicolumn{7}{c|}{what is IGMP} \\
+  \hline
+  \multirow{2}{*}{\begin{sideways}\footnotesize{传输层}\end{sideways}}
+  & tcp & \multicolumn{7}{c|}{what is tcp} \\
+  \cline{2-9}
+  & udp & \multicolumn{7}{c|}{what is udp} \\
+  \hline
+  \multirow{8}{*}{\begin{sideways}\footnotesize{tcp应用层}\end{sideways}}
+  & http & \multicolumn{7}{c|}{what is http} \\
+  \cline{2-9}
+  & telnet & \multicolumn{7}{c|}{what is telnet} \\
+  \cline{2-9}
+  & imap4 & \multicolumn{7}{c|}{what is imap4} \\
+  \cline{2-9}
+  & pop3 & \multicolumn{7}{c|}{what is pop3} \\
+  \cline{2-9}
+  & ftp & \multicolumn{7}{c|}{what is ftp} \\
+  \cline{2-9}
+  & smtp & \multicolumn{7}{c|}{what is smtp} \\
+  \cline{2-9}
+  & tcp7 & \multicolumn{7}{c|}{what is tcp7} \\
+  \cline{2-9}
+  & tcp8 & \multicolumn{7}{c|}{what is tcp8} \\
+  \hline
+  \multirow{8}{*}{\begin{sideways}\footnotesize{udp应用层}\end{sideways}}
+  & http & \multicolumn{7}{c|}{what is http} \\
+  \cline{2-9}
+  & dns & \multicolumn{7}{c|}{what is dns} \\
+  \cline{2-9}
+  & ntp & \multicolumn{7}{c|}{what is ntp} \\
+  \cline{2-9}
+  & bootp & \multicolumn{7}{c|}{what is bootp} \\
+  \cline{2-9}
+  & snmp & \multicolumn{7}{c|}{what is snmp} \\
+  \cline{2-9}
+  & udp6 & \multicolumn{7}{c|}{what is udp6} \\
+  \cline{2-9}
+  & udp & \multicolumn{7}{c|}{what is udp7} \\
+  \cline{2-9}
+  & udp & \multicolumn{7}{c|}{what is udp8} \\
+  \hline
+\end{tabular}
+
+\newpage
+\begin{sideways}
+  sideways
+\end{sideways}
+\begin{turn}{45}
+  turn/45^0
+\end{turn}
+\begin{rotate}{120}
+  rotate/120^0
+\end{rotate}
